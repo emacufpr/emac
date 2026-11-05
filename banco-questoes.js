@@ -1,4 +1,4 @@
-/**
+﻿/**
  * =======================================================================
  * BANCO DE DADOS DE QUESTÕES - CENTRO DE TREINAMENTO EMAC
  * =======================================================================
@@ -1735,7 +1735,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: '',
         answer: 2100,
         acceptedAnswers: [2100, '2100', '2100.00', '2.100', '2100,00'],
-        explanation: `Para achar o vértice ótimo, igualamos as restrições: y = 40 - 2x. Substituindo na segunda: x + 2(40 - 2x) = 50 ➔ x + 80 - 4x = 50 ➔ -3x = -30 ➔ x = 10. Se x = 10, y = 20. O ponto de interseção é (10, 20). Aplicando na Função Objetivo: Z = 50(10) + 80(20) = 500 + 1600 = R$ 2.100,00.`
     },
     {
         id: 502,
@@ -1754,7 +1753,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: 'smartphones',
         answer: 16,
         acceptedAnswers: [16, '16'],
-        explanation: `Calculando a interseção: y = 60 - 3x. Substituindo: x + 2(60 - 3x) = 40 ➔ x + 120 - 6x = 40 ➔ 5x = 80 ➔ x = 16. O valor de y será 12. O ponto (16, 12) rende Z = 200(16) + 300(12) = 3200 + 3600 = 6800. Os vértices extremos (20,0) dão 4000 e (0,20) dão 6000. O ponto ótimo é a interseção, que exige x = 16 smartphones.`
     },
     {
         id: 503,
@@ -1774,7 +1772,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: '',
         answer: 180,
         acceptedAnswers: [180, '180', '180.00', '180,00'],
-        explanation: `O vértice de interseção é: y = 20 - 2x ➔ x + 3(20 - 2x) = 30 ➔ x + 60 - 6x = 30 ➔ 5x = 30 ➔ x = 6. Logo, y = 8. O ponto é (6, 8). Testando os vértices factíveis na função de custo (C = 10x + 15y): Ponto (0, 20) dá R$ 300. Ponto (30, 0) dá R$ 300. Ponto (6, 8) dá 60 + 120 = R$ 180. O custo mínimo é R$ 180,00.`
     },
     {
         id: 504,
@@ -1794,7 +1791,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: 'caminhões',
         answer: 3,
         acceptedAnswers: [3, '3'],
-        explanation: `Interseção das retas de fronteira: x = 5 - y. Substituindo: 2(5 - y) + 4y = 16 ➔ 10 - 2y + 4y = 16 ➔ 2y = 6 ➔ y = 3. Consequentemente, x = 2. O ponto (2, 3) está na interseção. Testando os vértices factíveis: (8, 0) gera C = 1200. (0, 5) gera C = 1000. (2, 3) gera C = 150(2) + 200(3) = 300 + 600 = R$ 900,00. O menor custo ocorre em (2,3), exigindo y = 3 caminhões.`
     },
     {
         id: 505,
@@ -1814,7 +1810,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: 'pontos',
         answer: 56,
         acceptedAnswers: [56, '56'],
-        explanation: `Os vértices da Região Factível são (0,0), (8,0), (0,6), (8,4), e (6,6). Testando os vértices mais distantes na função Z = 5x + 4y: Z(8,0) = 40. Z(6,6) = 30 + 24 = 54. Z(8,4) = 5(8) + 4(4) = 40 + 16 = 56. A pontuação máxima é 56, estudando 8h de matemática e 4h de história.`
     },
     {
         id: 506,
@@ -1834,7 +1829,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: 'estantes',
         answer: 15,
         acceptedAnswers: [15, '15'],
-        explanation: `Calculando o vértice de interseção: y = 40 - 2x. Na equação da madeira: 4x + 6(40 - 2x) = 120 ➔ 4x + 240 - 12x = 120 ➔ 8x = 120 ➔ x = 15. Com isso, y = 10. O vértice é (15, 10). Testando lucros: (20,0) dá R$ 8.000; (0,20) dá R$ 6.000; (15,10) dá 400(15) + 300(10) = 6000 + 3000 = R$ 9.000. O lucro máximo exige produzir x = 15 estantes.`
     },
     {
         id: 507,
@@ -1854,7 +1848,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: '',
         answer: 1700,
         acceptedAnswers: [1700, '1700', '1700.00', '1.700', '1700,00'],
-        explanation: `A interseção ocorre em: y = 36 - 3x. Substituindo no Ouro: 2x + 5(36 - 3x) = 50 ➔ 2x + 180 - 15x = 50 ➔ 13x = 130 ➔ x = 10. Logo, y = 36 - 30 = 6. Vértice (10, 6). Avaliando Z = 80x + 150y: Z(12,0) = 960. Z(0,10) = 1500. Z(10,6) = 800 + 900 = 1700. O lucro máximo é de R$ 1.700,00.`
     },
     {
         id: 508,
@@ -1874,7 +1867,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: 'convidados',
         answer: 680,
         acceptedAnswers: [680, '680'],
-        explanation: `Interseção: x = 20 - 2y ➔ (20 - 2y) + 3y = 24 ➔ 20 + y = 24 ➔ y = 4. Então x = 12. Ponto de interseção: (12, 4). Testando a capacidade Z = 30x + 80y nos vértices: (20,0) comporta 600. (0,8) comporta 640. (12,4) comporta 30(12) + 80(4) = 360 + 320 = 680. A capacidade máxima do evento é 680 convidados.`
     },
     {
         id: 509,
@@ -1894,7 +1886,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: '',
         answer: 6,
         acceptedAnswers: [6, '6'],
-        explanation: `Interseção: Multiplicando a primeira por 4: 4x + 4y = 40. Subtraindo da segunda: (4x + 6y) - (4x + 4y) = 48 - 40 ➔ 2y = 8 ➔ y = 4. Substituindo: x + 4 = 10 ➔ x = 6. O ponto é (6, 4). Testando a função R = 3x + 4y nos vértices da área irrestrita superior: Ponto (12, 0) ➔ R = 36. Ponto (0, 10) ➔ R = 40. Ponto da interseção (6, 4) ➔ R = 18 + 16 = 34. O risco mínimo é 34, que requer x = 6 no Fundo de Ações.`
     },
     {
         id: 510,
@@ -1914,7 +1905,6 @@ const BANCO_QUESTOES_EMAC = {
         unitSuffix: 'pacotes',
         answer: 220,
         acceptedAnswers: [220, '220'],
-        explanation: `Interseção das restrições: x = 16 - y. Substituindo: 2(16 - y) + 5y = 50 ➔ 32 - 2y + 5y = 50 ➔ 3y = 18 ➔ y = 6. Por consequência, x = 10. O ponto é (10, 6). Verificando os vértices na função Z = 10x + 20y: (16, 0) gera 160 entregas. (0, 10) gera 200 entregas. (10, 6) gera 10(10) + 20(6) = 100 + 120 = 220 entregas. O máximo desempenho é de 220 pacotes.`
     },
     {
         id: 511,
@@ -1935,7 +1925,6 @@ const BANCO_QUESTOES_EMAC = {
             'Produzir 12 Caixas de Trufas e 10 Barras, gerando R$ 980,00.'
         ],
         correctIndex: 2,
-        explanation: `O cruzamento das retas ocorre em: x = 10 - y ➔ 2(10 - y) + 3y = 24 ➔ 20 - 2y + 3y = 24 ➔ y = 4. Consequentemente, x = 6. Testando Z = 40x + 50y no vértice (6,4): 240 + 200 = R$ 440,00. Os outros vértices viáveis são (10,0) e (0,8), que geram apenas R$ 400,00.`
     },
     {
         id: 512,
@@ -1956,7 +1945,6 @@ const BANCO_QUESTOES_EMAC = {
             '0 Servidores Básicos e 10 Avançados (Custo: 2000).'
         ],
         correctIndex: 1,
-        explanation: `A Região Factível é delimitada pelos pontos (16,0), (25,0) e pela interseção (10,6). Ao minimizar a função C = 100x + 200y, testamos: C(16,0) = 1600; C(25,0) = 2500; C(10,6) = 1000+1200 = 2200. O menor valor absoluto é R$ 1.600,00 no ponto (16,0).`
     },
     {
         id: 513,
@@ -1977,7 +1965,6 @@ const BANCO_QUESTOES_EMAC = {
             '8 Colares e 8 Pulseiras, gerando R$ 560,00.'
         ],
         correctIndex: 2,
-        explanation: `Interseção: x = 26 - 2y ➔ 5(26 - 2y) + 2y = 50 ➔ 130 - 10y + 2y = 50 ➔ 8y = 80 ➔ y = 10. Logo, x = 6. O ponto ótimo é (6, 10). O lucro será Z = 40(6) + 30(10) = 240 + 300 = R$ 540,00. O ponto (8,8) é inviável, pois estoura o limite de pedrarias (5*8 + 2*8 = 56 > 50).`
     },
     {
         id: 514,
@@ -1998,7 +1985,6 @@ const BANCO_QUESTOES_EMAC = {
             'Plantar 5 canteiros de Rosas e 15 de Margaridas (x=5, y=15).'
         ],
         correctIndex: 2,
-        explanation: `Cruzamento das restrições: y = 30 - 3x ➔ x + 2(30 - 3x) = 40 ➔ x + 60 - 6x = 40 ➔ 5x = 20 ➔ x = 4. Portanto, y = 18. O vértice ótimo é (4, 18). O lucro em Z = 15x + 10y para esse ponto é 15(4) + 10(18) = 60 + 180 = R$ 240,00. O lucro nos extremos seria R$ 150 ou R$ 200.`
     },
     {
         id: 515,
@@ -2019,7 +2005,6 @@ const BANCO_QUESTOES_EMAC = {
             'Contratar 4 Bandas de Rock e 4 de Pop, atraindo 20.000 pessoas.'
         ],
         correctIndex: 2,
-        explanation: `Isolando y na primeira: y = 12 - 2x. Na segunda: x + 2(12 - 2x) = 15 ➔ x + 24 - 4x = 15 ➔ 3x = 9 ➔ x = 3. Com isso, y = 6. O ponto (3, 6) rende um público Z = 3000(3) + 2000(6) = 9000 + 12000 = 21.000 pessoas, o maior valor entre os vértices factíveis.`
     },
     {
         id: 516,
@@ -2040,7 +2025,6 @@ const BANCO_QUESTOES_EMAC = {
             'Produzir 6 lotes de Laranja e 8 de Uva.'
         ],
         correctIndex: 3,
-        explanation: `No cruzamento: 2y = 40 - 4x ➔ y = 20 - 2x. Substituindo no açúcar: 2x + 4(20 - 2x) = 44 ➔ 2x + 80 - 8x = 44 ➔ 6x = 36 ➔ x = 6. Logo, y = 8. O vértice (6,8) rende Z = 5(6) + 6(8) = 30 + 48 = R$ 78,00. As outras opções faturam menos (50 ou 66 reais).`
     },
     {
         id: 517,
@@ -2057,7 +2041,6 @@ const BANCO_QUESTOES_EMAC = {
             'R$ 6.200,00'
         ],
         correctIndex: 2,
-        explanation: `Isolando x na mão de obra: x = 30 - 3y. No terreno: 4(30 - 3y) + 2y = 60 ➔ 120 - 12y + 2y = 60 ➔ 10y = 60 ➔ y = 6. Com isso, x = 12. O vértice ótimo é (12, 6). Calculando o lucro Z: 200(12) + 500(6) = 2400 + 3000 = R$ 5.400,00.`
     },
     {
         id: 518,
@@ -2078,7 +2061,6 @@ const BANCO_QUESTOES_EMAC = {
             '8 Turmas Básicas e 8 Avançadas.'
         ],
         correctIndex: 0,
-        explanation: `Multiplicando a primeira por 3 e a segunda por 2 para anular o x: 6x + 15y = 150; 6x + 4y = 84. Subtraindo: 11y = 66 ➔ y = 6. Substituindo: 2x + 30 = 50 ➔ 2x = 20 ➔ x = 10. O vértice (10, 6) rende Z = 100(10) + 150(6) = 1000 + 900 = R$ 1.900,00. É o maior lucro possível.`
     },
     {
         id: 519,
@@ -2099,7 +2081,6 @@ const BANCO_QUESTOES_EMAC = {
             'Alugar 8 Barcos Pequenos e 2 Grandes, custando R$ 2.600,00.'
         ],
         correctIndex: 0,
-        explanation: `Vértices da área irrestrita superior: Interseção: x = 9 - y ➔ 2(9 - y) + 4y = 24 ➔ 18 - 2y + 4y = 24 ➔ 2y = 6 ➔ y = 3, x = 6. O ponto é (6,3). Os extremos no eixo são (12,0) para x e (0,9) para y. Testando custos C = 200x + 500y: C(12,0) = 2400. C(0,9) = 4500. C(6,3) = 1200 + 1500 = 2700. O menor valor absoluto ocorre no vértice (12,0), custando apenas R$ 2.400,00.`
     },
     {
         id: 520,
@@ -2120,7 +2101,6 @@ const BANCO_QUESTOES_EMAC = {
             'Fazer 100 anúncios gráficos (x) e 30 em vídeo (y), gerando 8.600 cliques.'
         ],
         correctIndex: 2,
-        explanation: `Subtraindo a 2ª restrição da 1ª: (4x + 6y) - (2x + 6y) = 600 - 420 ➔ 2x = 180 ➔ x = 90. Substituindo: 180 + 6y = 420 ➔ 6y = 240 ➔ y = 40. O vértice ótimo é (90, 40). Calculando cliques: 50(90) + 120(40) = 4500 + 4800 = 9.300 cliques. As extremidades viáveis são (150,0) com 7.500 cliques e (0,70) com 8.400 cliques.`
     }
 ]
 };

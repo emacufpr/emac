@@ -472,10 +472,11 @@ const EMACTreinamento = (function () {
                 </div>
                 <div class="feedback-content">
                     ${!isCorrect ? `<p class="feedback-correct-answer"><strong>Gabarito:</strong> ${correctAnswerLabel}</p>` : ''}
+                    ${q.explanation ? `
                     <div class="feedback-explanation">
                         <strong>Passo a passo da resolução:</strong>
                         <div class="explanation-text">${q.explanation}</div>
-                    </div>
+                    </div>` : ''}
                 </div>
             `;
 
@@ -617,12 +618,13 @@ const EMACTreinamento = (function () {
                             <span class="review-user-ans"><strong>Sua resposta:</strong> ${item.userAnswer || '(Em branco)'}</span>
                             ${!item.isCorrect ? `<span class="review-correct-ans"><strong>Correta:</strong> ${item.correctAnswer}</span>` : ''}
                         </div>
+                        ${item.question.explanation ? `
                         <div class="review-explanation-toggle">
                             <details>
                                 <summary>Ver explicação matemática</summary>
                                 <div class="review-explanation-content">${item.question.explanation}</div>
                             </details>
-                        </div>
+                        </div>` : ''}
                     </div>
                 </div>
             `).join('');
