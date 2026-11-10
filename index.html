@@ -53,7 +53,7 @@
         <div class="card-grid">
             
             <!-- Cartão 1: Setor de Corte -->
-            <a href="setordecorte.html" class="card">
+            <a href="setordecorte.html" class="card" data-chapter="1">
                 <div class="card-image">
                     <img src="./imgs/setordecorte.jpg" alt="Setor de Corte">
                 </div>
@@ -64,7 +64,7 @@
             </a>
 
             <!-- Cartão 2: Setor de Montagem -->
-            <a href="setordemontagem.html" class="card">
+            <a href="setordemontagem.html" class="card" data-chapter="2">
                 <div class="card-image">
                     <img src="./imgs/setordemontagem.jpg" alt="Setor de Montagem">
                 </div>
@@ -75,7 +75,7 @@
             </a>
 
             <!-- Cartão 3: Setor de Logística -->
-            <a href="setordelogistica.html" class="card">
+            <a href="setordelogistica.html" class="card" data-chapter="3">
                 <div class="card-image">
                     <img src="./imgs/setordelogistica.jpg" alt="Setor de Logística">
                 </div>
@@ -86,7 +86,7 @@
             </a>
 
             <!-- Cartão 4: Setor de Vendas -->
-            <a href="setordevendas.html" class="card">
+            <a href="setordevendas.html" class="card" data-chapter="4">
                 <div class="card-image">
                     <img src="./imgs/setordevendas.jpg" alt="Setor de Vendas">
                 </div>
@@ -158,6 +158,21 @@
                 <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
                 <span>Continuar com o Google</span>
             </button>
+        </div>
+    </div>
+
+    <!-- Modal de Escolha: Entrar no Capítulo ou Centro de Treinamento -->
+    <div id="chapterModal" class="chapter-modal-backdrop" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="chapterModalTitle">
+        <div class="chapter-modal-card" id="chapterModalCard">
+            <button id="closeChapterModal" class="chapter-modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="chapter-modal-header">
+                <span id="chapterModalBadge" class="chapter-modal-badge">CAPÍTULO 1</span>
+                <h2 id="chapterModalTitle" class="chapter-modal-title">Setor de Corte</h2>
+                <p id="chapterModalSubtitle" class="chapter-modal-subtitle">O que você deseja fazer agora?</p>
+            </div>
+            <div id="chapterModalGrid" class="chapter-modal-grid">
+                <!-- Conteúdo renderizado dinamicamente via JS -->
+            </div>
         </div>
     </div>
 

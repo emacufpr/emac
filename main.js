@@ -129,7 +129,241 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Inicializa os Capítulos 4 e 5: Magnata da Fábrica (se a página contiver o jogo de otimização)
     initMagnataDaFabrica();
+
+    // Inicializa o modal de escolha dos Capítulos / Centro de Treinamento (na página inicial)
+    initIndexChapterModal();
 });
+
+/* ====================================================================
+   MODAL DE ESCOLHA DOS CAPÍTULOS / CENTRO DE TREINAMENTO (INDEX)
+   ==================================================================== */
+const CHAPTER_NAVIGATION_DATA = {
+    1: {
+        badge: 'CAPÍTULO 1',
+        title: 'Setor de Corte',
+        color: '#e53935',
+        boxes: [
+            {
+                icon: '🪚',
+                title: 'Setor de Corte',
+                tag: '📖 Teoria & Simulação',
+                btnText: 'Entrar no Setor',
+                url: 'setordecorte.html',
+                accentColor: '#004b87',
+                iconBg: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                iconBorder: '#bfdbfe',
+                iconShadow: 'rgba(0, 75, 135, 0.15)',
+                tagBg: '#eff6ff'
+            },
+            {
+                icon: '🎯',
+                title: 'Centro de Treinamento',
+                tag: '⚡ Módulo de Atividades',
+                btnText: 'Fazer Exercícios',
+                url: 'treinamento-cap1.html',
+                accentColor: '#e53935',
+                iconBg: 'linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%)',
+                iconBorder: '#fecaca',
+                iconShadow: 'rgba(229, 57, 53, 0.2)',
+                tagBg: '#fef2f2'
+            }
+        ]
+    },
+    2: {
+        badge: 'CAPÍTULO 2',
+        title: 'Setor de Montagem',
+        color: '#1e88e5',
+        boxes: [
+            {
+                icon: '🛠️',
+                title: 'Setor de Montagem',
+                tag: '📖 Teoria & Simulação',
+                btnText: 'Entrar no Setor',
+                url: 'setordemontagem.html',
+                accentColor: '#004b87',
+                iconBg: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                iconBorder: '#bfdbfe',
+                iconShadow: 'rgba(0, 75, 135, 0.15)',
+                tagBg: '#eff6ff'
+            },
+            {
+                icon: '🎯',
+                title: 'Centro de Treinamento',
+                tag: '⚡ Módulo de Atividades',
+                btnText: 'Fazer Exercícios',
+                url: 'treinamento-cap2.html',
+                accentColor: '#1e88e5',
+                iconBg: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                iconBorder: '#93c5fd',
+                iconShadow: 'rgba(30, 136, 229, 0.2)',
+                tagBg: '#eff6ff'
+            }
+        ]
+    },
+    3: {
+        badge: 'CAPÍTULO 3',
+        title: 'Setor de Logística',
+        color: '#fb8c00',
+        boxes: [
+            {
+                icon: '🚚',
+                title: 'Setor de Logística',
+                tag: '📖 Teoria & Simulação',
+                btnText: 'Entrar no Setor',
+                url: 'setordelogistica.html',
+                accentColor: '#004b87',
+                iconBg: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                iconBorder: '#bfdbfe',
+                iconShadow: 'rgba(0, 75, 135, 0.15)',
+                tagBg: '#eff6ff'
+            },
+            {
+                icon: '🎯',
+                title: 'Centro de Treinamento',
+                tag: '⚡ Módulo de Atividades',
+                btnText: 'Fazer Exercícios',
+                url: 'treinamento-cap3.html',
+                accentColor: '#ea580c',
+                iconBg: 'linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%)',
+                iconBorder: '#fed7aa',
+                iconShadow: 'rgba(234, 88, 12, 0.2)',
+                tagBg: '#fff7ed'
+            }
+        ]
+    },
+    4: {
+        badge: 'CAPÍTULOS 4 E 5',
+        title: 'Setor de Vendas',
+        color: '#43a047',
+        boxes: [
+            {
+                icon: '🏪',
+                title: 'Setor de Vendas',
+                tag: '📖 Teoria & Simulação',
+                btnText: 'Entrar no Setor',
+                url: 'setordevendas.html',
+                accentColor: '#004b87',
+                iconBg: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                iconBorder: '#bfdbfe',
+                iconShadow: 'rgba(0, 75, 135, 0.15)',
+                tagBg: '#eff6ff'
+            },
+            {
+                icon: '🎯',
+                title: 'Módulo 4: Vendas',
+                tag: '⚡ Atividades do Módulo',
+                btnText: 'Fazer Exercícios',
+                url: 'treinamento-cap4.html',
+                accentColor: '#16a34a',
+                iconBg: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)',
+                iconBorder: '#bbf7d0',
+                iconShadow: 'rgba(22, 163, 74, 0.2)',
+                tagBg: '#f0fdf4'
+            },
+            {
+                icon: '🏆',
+                title: 'Módulo 5: Otimização',
+                tag: '⚡ Atividades do Módulo',
+                btnText: 'Fazer Exercícios',
+                url: 'treinamento-cap5.html',
+                accentColor: '#7c3aed',
+                iconBg: 'linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%)',
+                iconBorder: '#e9d5ff',
+                iconShadow: 'rgba(124, 58, 237, 0.2)',
+                tagBg: '#faf5ff'
+            }
+        ]
+    }
+};
+
+function initIndexChapterModal() {
+    const modal = document.getElementById('chapterModal');
+    if (!modal) return;
+
+    const modalBadge = document.getElementById('chapterModalBadge');
+    const modalTitle = document.getElementById('chapterModalTitle');
+    const modalSubtitle = document.getElementById('chapterModalSubtitle');
+    const modalGrid = document.getElementById('chapterModalGrid');
+    const modalCard = document.getElementById('chapterModalCard');
+    const closeBtn = document.getElementById('closeChapterModal');
+
+    function openChapterModal(chapterId) {
+        const data = CHAPTER_NAVIGATION_DATA[chapterId];
+        if (!data) return;
+
+        if (modalBadge) {
+            modalBadge.textContent = data.badge;
+            modalBadge.style.backgroundColor = data.color;
+        }
+        if (modalTitle) {
+            modalTitle.textContent = data.title;
+        }
+        if (modalSubtitle) {
+            modalSubtitle.textContent = 'O que você deseja fazer agora?';
+        }
+
+        const is3Boxes = data.boxes.length === 3;
+        if (modalCard) {
+            if (is3Boxes) {
+                modalCard.classList.add('layout-3-boxes');
+            } else {
+                modalCard.classList.remove('layout-3-boxes');
+            }
+        }
+        if (modalGrid) {
+            modalGrid.className = is3Boxes ? 'chapter-modal-grid cols-3' : 'chapter-modal-grid';
+            modalGrid.innerHTML = data.boxes.map(box => `
+                <a href="${box.url}" class="chapter-choice-box" style="
+                    --box-accent-color: ${box.accentColor};
+                    --box-icon-bg: ${box.iconBg};
+                    --box-icon-border: ${box.iconBorder};
+                    --box-icon-shadow: ${box.iconShadow};
+                    --box-tag-bg: ${box.tagBg};
+                ">
+                    <div class="chapter-choice-icon-wrap">${box.icon}</div>
+                    <h3 class="chapter-choice-title">${box.title}</h3>
+                    <span class="chapter-choice-tag">${box.tag}</span>
+                    <div class="chapter-choice-btn">
+                        ${box.btnText} <span class="arrow">&rarr;</span>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeChapterModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    const chapterCards = document.querySelectorAll('.card[data-chapter]');
+    chapterCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.preventDefault();
+            const chap = card.getAttribute('data-chapter');
+            openChapterModal(chap);
+        });
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeChapterModal);
+    }
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeChapterModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+            closeChapterModal();
+        }
+    });
+}
 
 
 /**
