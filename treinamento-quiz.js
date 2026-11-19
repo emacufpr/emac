@@ -328,7 +328,7 @@ const EMACTreinamento = (function () {
                         <label class="quiz-input-label" for="exactAnswerInput">Digite sua resposta numérica exata:</label>
                         <div class="quiz-input-wrapper">
                             ${q.unitPrefix ? `<span class="quiz-unit-prefix">${q.unitPrefix}</span>` : ''}
-                            <input type="text" id="exactAnswerInput" class="quiz-text-input" placeholder="${q.placeholder || 'Digite o valor...'}" autocomplete="off">
+                            <input type="text" id="exactAnswerInput" class="quiz-text-input" placeholder="${q.placeholder || ''}" autocomplete="off">
                             ${q.unitSuffix ? `<span class="quiz-unit-suffix">${q.unitSuffix}</span>` : ''}
                         </div>
                         <small class="quiz-input-hint">Dica: digite apenas o número correspondente (ex: 25 ou 12.5). Use ponto ou vírgula para decimais.</small>

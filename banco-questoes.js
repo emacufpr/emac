@@ -1,4 +1,4 @@
-﻿/**
+/**
  * =======================================================================
  * BANCO DE DADOS DE QUESTÕES - CENTRO DE TREINAMENTO EMAC
  * =======================================================================
@@ -61,7 +61,7 @@
  *         <p>Enunciado do problema de cálculo.</p>
  *         <p>Qual é o valor final calculado?</p>
  *     `,
- *     placeholder: 'Ex: 10',                  // Dica cinza que aparece dentro do campo
+ *     placeholder: '',                        // Campo de digitação limpo
  *     unitPrefix: 'R$',                       // Prefixo antes do campo (ex: 'R$' ou '')
  *     unitSuffix: 'peças',                    // Sufixo depois do campo (ex: 'kg', 'horas' ou '')
  *     answer: 10,                             // Resposta correta principal
@@ -99,7 +99,7 @@ function criarQuestoesPadrao(capituloNum) {
                 <p>Enunciado da questão.</p>
                 <p><strong>Resposta correta: 10</strong></p>
             `,
-            placeholder: 'Digite a resposta...',
+            placeholder: '',
             unitPrefix: '',
             unitSuffix: '',
             answer: 10,
@@ -131,7 +131,7 @@ function criarQuestoesPadrao(capituloNum) {
                 <p>Enunciado da questão.</p>
                 <p><strong>Resposta correta: 50</strong></p>
             `,
-            placeholder: 'Digite a resposta...',
+            placeholder: '',
             unitPrefix: '',
             unitSuffix: '',
             answer: 50,
@@ -163,7 +163,7 @@ function criarQuestoesPadrao(capituloNum) {
                 <p>Enunciado da questão.</p>
                 <p><strong>Resposta correta: 25</strong></p>
             `,
-            placeholder: 'Digite a resposta...',
+            placeholder: '',
             unitPrefix: '',
             unitSuffix: '',
             answer: 25,
@@ -208,7 +208,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma fábrica possui uma máquina de corte que gera um custo fixo de R$ 50,00 toda vez que é ligada, independentemente da produção. Além disso, o custo da matéria-prima utilizada para cada tábua cortada é de R$ 15,00.</p>
             <p>Utilizando a função afim correspondente a esses gastos, qual será o custo total da fábrica para cortar exatamente 20 tábuas?</p>
         `,
-        placeholder: 'Ex: 350',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 350,
@@ -223,7 +223,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma determinada máquina industrial possui uma função de custo dada por C(x) = 15x + 50, onde 'x' é a quantidade de peças produzidas no dia.</p>
             <p>Se o painel de controle indicou um custo final de R$ 1.550,00 para um determinado lote, qual foi a quantidade exata de peças (x) produzidas para gerar esse custo?</p>
         `,
-        placeholder: 'Ex: 100',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'peças',
         answer: 100,
@@ -238,7 +238,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um gerente de produção possui um contrato estipulando um salário base fixo de R$ 5.000,00 mensais. Além disso, ele recebe um bônus de R$ 500,00 por cada lote de peças que sua equipe entrega pronto no mês.</p>
             <p>Se a equipe conseguir montar e entregar 12 lotes no decorrer de um mês, qual será o valor em reais do salário final desse gerente?</p>
         `,
-        placeholder: 'Ex: 11000',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 11000,
@@ -253,7 +253,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A diretoria de uma indústria utiliza a função S(x) = 500x + 5000 para calcular o salário total de um supervisor com base nos lotes (x) entregues por ele.</p>
             <p>Se a empresa planejou um orçamento com teto máximo de R$ 10.500,00 para o pagamento deste funcionário em um mês, quantos lotes ele precisa entregar para atingir exatamente esse limite financeiro?</p>
         `,
-        placeholder: 'Ex: 11',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'lotes',
         answer: 11,
@@ -268,7 +268,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Em uma linha de produção, o custo total de fabricação de um componente segue rigorosamente a função afim C(x) = 15x + 50, onde x representa a quantidade produzida.</p>
             <p>Qual será o custo total repassado ao setor financeiro para produzir exatas 30 unidades desse componente?</p>
         `,
-        placeholder: 'Ex: 500',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 500,
@@ -283,7 +283,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um novo pedido exige que a equipe prepare um lote especial contendo 45 tábuas de madeira para um cliente.</p>
             <p>Sabendo que a função que define o custo total da máquina é dada por C(x) = 15x + 50, qual será o gasto exato da fábrica para produzir esse lote?</p>
         `,
-        placeholder: 'Ex: 725',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 725,
@@ -298,7 +298,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um auditor financeiro verificou que o custo do setor de acabamento em um determinado turno fechou em exatamente R$ 800,00.</p>
             <p>Usando a função C(x) = 15x + 50 de custos operacionais, descubra: quantas unidades (x) foram finalizadas no equipamento para gerar esse custo?</p>
         `,
-        placeholder: 'Ex: 50',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'unidades',
         answer: 50,
@@ -313,7 +313,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A função do salário de um líder de setor é S(x) = 500x + 5000, onde x representa a quantidade de lotes extras finalizados.</p>
             <p>Em um mês de alta demanda produtiva, a equipe superou as expectativas e entregou 15 lotes completos. Qual será o salário total recebido pelo líder neste mês?</p>
         `,
-        placeholder: 'Ex: 12500',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 12500,
@@ -328,7 +328,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um funcionário está planejando suas finanças pessoais e percebeu que precisa receber um salário de exatos R$ 8.500,00 no próximo mês para cobrir suas dívidas.</p>
             <p>Se o salário dele é pago de acordo com a função S(x) = 500x + 5000, quantos lotes (x) ele precisará entregar para alcançar sua meta financeira?</p>
         `,
-        placeholder: 'Ex: 7',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'lotes',
         answer: 7,
@@ -343,7 +343,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Ao construir o gráfico de uma função afim dada por f(x) = 15x + 50 no plano cartesiano, a variável independente x fica no eixo horizontal e a imagem f(x) no eixo vertical.</p>
             <p>Se a variável x assumir o valor de 8, em qual número exato o seu ponto correspondente estará marcado no eixo vertical (eixo y)?</p>
         `,
-        placeholder: 'Ex: 170',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: '',
         answer: 170,
@@ -519,7 +519,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Considere que uma máquina industrial pesada consome R$ 50,00 de energia no exato segundo em que é ligada, independentemente de operar em peças depois. O processo de cada peça custa R$ 15,00 extras.</p>
             <p>Se a equipe ligar a máquina, mas houver um problema técnico e <strong>0 (zero) peças</strong> forem processadas, qual será o custo registrado?</p>
         `,
-        placeholder: 'Ex: 50',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 50,
@@ -534,7 +534,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Em um dia de capacidade reduzida, um setor produtivo operou a máquina principal e registrou um custo total de exatamente R$ 1.100,00 no final do dia.</p>
             <p>Utilizando a função de custo operacional, <strong>C(x) = 15x + 50</strong>, quantas peças foram processadas nesse dia?</p>
         `,
-        placeholder: 'Ex: 70',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'peças',
         answer: 70,
@@ -549,7 +549,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um funcionário terceirizado verificou seu recibo mensal e notou que o pagamento liberado pela contratante foi de R$ 9.500,00 no total.</p>
             <p>Sabendo que a sua função salarial obedece à regra <strong>S(x) = 500x + 5000</strong>, onde x são os projetos finalizados, quantos projetos ele conseguiu concluir para atingir esse valor?</p>
         `,
-        placeholder: 'Ex: 9',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'projetos',
         answer: 9,
@@ -564,7 +564,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um operador novato foi encarregado de fabricar exatas 40 peças brutas em seu equipamento durante o turno da manhã.</p>
             <p>Usando o modelo matemático de custos do equipamento, expresso por <strong>C(x) = 15x + 50</strong>, qual será o custo financeiro total dessa operação?</p>
         `,
-        placeholder: 'Ex: 650',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 650,
@@ -579,7 +579,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A gerência solicitou um orçamento de emergência para suprir um cliente importante. Eles precisam que a equipe fabrique um grande lote com exatas 120 peças padronizadas.</p>
             <p>Aplicando o modelo matemático <strong>C(x) = 15x + 50</strong>, qual será o custo repassado à gerência para produzir essa encomenda?</p>
         `,
-        placeholder: 'Ex: 1850',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 1850,
@@ -594,7 +594,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma pequena fábrica de móveis tem um custo fixo diário de R$ 120,00 apenas para manter as máquinas ligadas e o galpão operando. Além disso, cada cadeira produzida gera um custo variável de R$ 35,00 em madeira e parafusos.</p>
             <p>Considerando a função afim que modela essa situação, qual será o custo total da fábrica em um dia em que são produzidas exatamente 30 cadeiras?</p>
         `,
-        placeholder: 'Ex: 1170',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 1170,
@@ -609,7 +609,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Para realizar as entregas, uma empresa de logística cobra uma taxa fixa de R$ 150,00 por viagem, mais um valor de R$ 4,00 por quilômetro rodado.</p>
             <p>Sabendo que o valor final cobrado por uma entrega específica foi de R$ 430,00, qual foi a distância total, em quilômetros, percorrida pelo caminhão?</p>
         `,
-        placeholder: 'Ex: 70',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'km',
         answer: 70,
@@ -624,7 +624,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um vendedor da loja recebe um salário base fixo de R$ 2.500,00 por mês. Como incentivo, ele também ganha uma comissão de R$ 150,00 por cada conjunto de jantar que consegue vender.</p>
             <p>Se em um determinado mês ele vender 18 conjuntos, qual será o valor total do seu salário?</p>
         `,
-        placeholder: 'Ex: 5200',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 5200,
@@ -639,7 +639,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um galpão de ferramentas pode ser alugado por autônomos. A administração cobra uma taxa de entrada de R$ 15,00 mais R$ 8,00 por cada hora de uso dos equipamentos.</p>
             <p>Se um profissional pagou exatamente R$ 71,00 ao final do dia, quantas horas ele passou utilizando o galpão?</p>
         `,
-        placeholder: 'Ex: 7',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'horas',
         answer: 7,
@@ -654,7 +654,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>No setor de acabamento, a preparação da cabine de pintura custa R$ 80,00 por turno devido aos produtos de limpeza e energia. A aplicação de verniz em cada peça gera um custo adicional de R$ 12,00.</p>
             <p>Montando a função afim que representa esse cenário, qual será o custo gerado em um turno onde a equipe finalizou 65 peças?</p>
         `,
-        placeholder: 'Ex: 860',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 860,
@@ -671,7 +671,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um pintor possui um orçamento com um teto financeiro absoluto de R$ 720,00 no cartão de crédito. Ele compra latas de tinta branca (x), que custam R$ 60,00 cada, e latas de tinta colorida (y), que custam R$ 90,00 cada. A inequação que modela o cenário é: <strong>60x + 90y ≤ 720</strong>.</p>
             <p>Se o pintor decidir colocar exatamente 4 latas de tinta colorida (y = 4) no carrinho, qual é a <strong>quantidade máxima</strong> de latas de tinta branca (x) que ele pode adicionar sem que o cartão seja recusado?</p>
         `,
-        placeholder: 'Ex: 5',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'latas brancas',
         answer: 6,
@@ -686,7 +686,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma equipe de vendas tem uma meta mínima diária de arrecadar pelo menos R$ 600,00 em comissões para que o turno não seja considerado de baixa produtividade. Eles vendem o Plano Básico (x), com R$ 50,00 de comissão, e o Plano Pro (y), com R$ 120,00 de comissão. A regra do gestor é: <strong>50x + 120y ≥ 600</strong>.</p>
             <p>No fechamento de um dia fraco, a equipe conseguiu vender 4 Planos Básicos e 3 Planos Pro. Qual foi o valor total arrecadado em reais pela equipe (o valor que deve ser comparado ao piso de 600)?</p>
         `,
-        placeholder: 'Ex: 500',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 560,
@@ -701,7 +701,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um fazendeiro precisa gerenciar o galpão da propriedade, que tem um teto físico de 1.000 metros quadrados. Ele vai guardar sacas de milho (x), que ocupam 2 m² cada, e caixas de maquinário (y), que ocupam 5 m² cada. A limitação é: <strong>2x + 5y ≤ 1000</strong>.</p>
             <p>Para desenhar o limite no gráfico, qual é a quantidade máxima de caixas de maquinário (y) que caberão no galpão, caso o fazendeiro não guarde nenhuma saca de milho (x = 0)?</p>
         `,
-        placeholder: 'Ex: 100',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'caixas',
         answer: 200,
@@ -716,7 +716,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>No setor de logística, o contrato com a transportadora impõe um teto para o peso do frete, estipulado pela balança rodoviária, que não pode exceder 250 kg. Cada mesa (x) adiciona 5 kg à carga e cada cadeira (y) adiciona 2 kg, formando a restrição: <strong>5x + 2y ≤ 250</strong>.</p>
             <p>Se o gerente de despacho já acomodou exatamente 30 mesas no caminhão, qual é a quantidade máxima de cadeiras que ainda podem ser carregadas sem que o veículo tome uma multa por excesso de peso?</p>
         `,
-        placeholder: 'Ex: 40',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'cadeiras',
         answer: 50,
@@ -731,7 +731,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O chão de fábrica opera sob um cronômetro rigoroso com um turno máximo de 480 minutos diários. Os funcionários levam 40 minutos para finalizar cada mesa (x) e 20 minutos para cada cadeira (y), resultando na regra de produção: <strong>40x + 20y ≤ 480</strong>.</p>
             <p>No meio do turno, o supervisor recebe uma ligação pedindo para priorizar exclusivamente a montagem das mesas (ou seja, nenhuma cadeira será montada, y = 0). Quantas mesas a equipe conseguirá produzir, no limite exato de todo o tempo disponível?</p>
         `,
-        placeholder: 'Ex: 10',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'mesas',
         answer: 12,
@@ -746,7 +746,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O setor de montagem de uma fábrica possui um teto rigoroso de 480 minutos de operação diária. O tempo de montagem é de 40 minutos para cada mesa (x) e 20 minutos para cada cadeira (y), formando a inequação de limite de tempo: <strong>40x + 20y ≤ 480</strong>.</p>
             <p>Se a equipe já finalizou a montagem de exatamente 8 mesas, quantos <strong>minutos</strong> ainda restam disponíveis no turno para que eles possam montar cadeiras?</p>
         `,
-        placeholder: 'Ex: 150',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'minutos',
         answer: 160,
@@ -761,7 +761,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma transportadora só isenta a taxa de entrega se a carga total atingir um peso mínimo de 100 kg. Sabe-se que cada mesa (x) pesa 5 kg e cada cadeira (y) pesa 2 kg. A inequação que garante a isenção é: <strong>5x + 2y ≥ 100</strong>.</p>
             <p>A equipe de expedição carregou no caminhão 10 mesas e 15 cadeiras. Qual é o <strong>peso total</strong> em quilogramas dessa carga específica (valor que determinará se a meta foi batida)?</p>
         `,
-        placeholder: 'Ex: 75',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'kg',
         answer: 80,
@@ -776,7 +776,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A área da doca destinada ao armazenamento dos móveis finalizados tem uma restrição física: ela comporta no máximo 60 móveis no total, independentemente do tipo. A inequação que representa esse teto espacial é <strong>x + y ≤ 60</strong>.</p>
             <p>Se o gerente decidir dedicar 100% desse espaço exclusivamente para o armazenamento de cadeiras (ou seja, montando zero mesas, x = 0), qual é a quantidade máxima de cadeiras (y) que caberão na doca?</p>
         `,
-        placeholder: 'Ex: 50',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'cadeiras',
         answer: 60,
@@ -791,7 +791,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um gestor financeiro definiu um orçamento máximo de R$ 500,00 por dia para a compra de duas matérias-primas. O Material A (x) custa R$ 20,00 a unidade e o Material B (y) custa R$ 50,00 a unidade. A inequação financeira é: <strong>20x + 50y ≤ 500</strong>.</p>
             <p>Se o gestor foi obrigado a comprar exatas 6 unidades do Material B (y = 6), qual é a quantidade máxima de unidades do Material A (x) que ele ainda pode comprar sem estourar o limite do orçamento?</p>
         `,
-        placeholder: 'Ex: 15',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'unidades',
         answer: 10,
@@ -806,7 +806,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma máquina de usinagem pode operar por no máximo 300 minutos antes de precisar de resfriamento. Ela fabrica a Peça Alfa (x), que consome 15 minutos, e a Peça Beta (y), que consome 30 minutos. A restrição é dada por: <strong>15x + 30y ≤ 300</strong>.</p>
             <p>Um técnico elaborou um plano de produção diário com 8 Peças Alfa e 5 Peças Beta. Quantos minutos totais esse plano vai consumir da máquina?</p>
         `,
-        placeholder: 'Ex: 250',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'minutos',
         answer: 270,
@@ -1077,7 +1077,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um sistema de inequações exige que o peso de uma carga respeite um teto rodoviário e um piso de lucro financeiro. A regra da balança rodoviária é: <strong>5x + 2y ≤ 250</strong>.</p>
             <p>Se um motorista já carregou exatamente 20 cadeiras (y = 20), qual é a quantidade máxima de mesas (x) que ele pode adicionar sem desrespeitar o teto da balança?</p>
         `,
-        placeholder: 'Ex: 40',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'mesas',
         answer: 42,
@@ -1092,7 +1092,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O baú de um caminhão possui um limite de capacidade determinado pela inequação <strong>x + y ≤ 60</strong> (onde x e y são tipos de móveis).</p>
             <p>Em um cenário de emergência, decidiu-se não enviar nenhuma peça do tipo y (y = 0). Quantas unidades exatas do tipo x preencherão completamente esse teto espacial?</p>
         `,
-        placeholder: 'Ex: 50',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'unidades',
         answer: 60,
@@ -1107,7 +1107,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Considere a seguinte restrição financeira de um sistema: <strong>5x + 2y ≥ 100</strong>.</p>
             <p>Uma equipe preparou uma carga com 10 mesas (x) e 25 cadeiras (y). Qual foi o resultado numérico final obtido ao substituir esses valores na inequação, antes de comparar com a meta de 100?</p>
         `,
-        placeholder: 'Ex: 90',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'kg',
         answer: 100,
@@ -1122,7 +1122,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um setor de pintura possui a restrição de tempo <strong>15x + 10y ≤ 400</strong> e a restrição de tinta <strong>3x + y ≤ 90</strong>.</p>
             <p>Se a equipe deseja pintar exatamente 20 peças do tipo x (mesas), ignorando por enquanto o tipo y (y=0), qual seria o consumo de tempo (em minutos) dessa operação?</p>
         `,
-        placeholder: 'Ex: 250',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'minutos',
         answer: 300,
@@ -1137,7 +1137,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um sistema para servidores em nuvem possui a restrição financeira <strong>500x + 1200y ≤ 10000</strong>.</p>
             <p>Um engenheiro precisa contratar exatos 5 servidores de alta performance (y = 5) e nenhum servidor básico (x = 0). Quanto (em reais) <strong>sobrará</strong> do orçamento total de 10.000 após essa contratação?</p>
         `,
-        placeholder: 'Ex: 2000',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 4000,
@@ -1152,7 +1152,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A meta semanal de uma loja é regida pela inequação <strong>50x + 30y ≥ 2000</strong>.</p>
             <p>Se a loja vender exclusivamente cadeiras (x = 0), qual é a quantidade <strong>mínima</strong> (inteira e exata) de cadeiras (y) necessárias para atingir a meta, sabendo que 66 cadeiras não são suficientes (dão R$ 1980)?</p>
         `,
-        placeholder: 'Ex: 68',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'cadeiras',
         answer: 67,
@@ -1167,7 +1167,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma padaria impõe o limite <strong>x + y ≤ 50</strong> para a vitrine e uma exigência <strong>x ≥ 20</strong> para as tortinhas (x).</p>
             <p>Se o padeiro preparar o número mínimo permitido de tortinhas (20 unidades), qual é o número máximo de brownies (y) que ele poderá colocar na vitrine?</p>
         `,
-        placeholder: 'Ex: 25',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'brownies',
         answer: 30,
@@ -1182,7 +1182,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O limite de tinta disponível é expresso por <strong>3x + y ≤ 90</strong>, onde x é a mesa e y é a cadeira.</p>
             <p>O encarregado planeja pintar 10 mesas (x = 10) e 40 cadeiras (y = 40). Quantos litros de tinta essa combinação vai consumir?</p>
         `,
-        placeholder: 'Ex: 65',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'litros',
         answer: 70,
@@ -1197,7 +1197,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A dieta de um atleta tem um teto calórico definido pela inequação <strong>150x + 200y ≤ 600</strong>.</p>
             <p>Se o atleta quiser consumir exclusivamente barras de cereal (ou seja, x = 0), quantas barras (y) exatas ele pode comer até atingir perfeitamente o limite de calorias?</p>
         `,
-        placeholder: 'Ex: 2',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'barras',
         answer: 3,
@@ -1212,7 +1212,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Para uma equipe montar arranjos florais, a restrição de quantidade de flores é <strong>4x + 6y ≤ 120</strong>.</p>
             <p>Um estagiário propôs uma montagem com 15 arranjos tipo A (x) e 10 arranjos tipo B (y). Qual foi o consumo total projetado de flores nessa proposta?</p>
         `,
-        placeholder: 'Ex: 100',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'flores',
         answer: 120,
@@ -1394,7 +1394,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma loja de eletrônicos vende dois tipos de dispositivos: fones de ouvido (x) e caixas de som Bluetooth (y). O gerente quer focar no aumento das receitas. Cada fone de ouvido é vendido por R$ 80,00 e cada caixa de som é vendida por R$ 150,00.</p>
             <p>Se a loja conseguiu vender exatamente 30 fones (x=30) e 10 caixas de som (y=10) em um dia, qual foi o valor total alcançado na Função Objetivo de faturamento (Z) para esse período?</p>
         `,
-        placeholder: 'Ex: 3500',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 3900,
@@ -1409,7 +1409,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Para abastecer suas filiais, um supermercado precisa decidir quantas viagens fará com caminhonetes médias (x) e carretas grandes (y). O foco da operação é <strong>minimizar</strong> os gastos com frete. O aluguel da caminhonete custa R$ 350,00 por viagem, e o da carreta custa R$ 900,00 por viagem.</p>
             <p>Se o planejamento logístico apontar que a melhor decisão é realizar 5 viagens com caminhonetes (x=5) e apenas 2 viagens com carretas (y=2), qual será o custo total otimizado (C) para o supermercado?</p>
         `,
-        placeholder: 'Ex: 4000',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 3550,
@@ -1424,7 +1424,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um ateliê produz bolsas de couro (x) e carteiras (y). Para vender uma bolsa, a artesã cobra R$ 250,00 do cliente, mas ela tem um custo direto de R$ 90,00 em couro, fechos e horas de trabalho. A carteira é vendida por R$ 80,00, com custo direto de R$ 30,00.</p>
             <p>Ao montar a Função Objetivo para maximizar o <strong>lucro líquido (Z)</strong>, qual deve ser o valor exato do coeficiente multiplicador associado à variável x (bolsas)?</p>
         `,
-        placeholder: 'Ex: 100',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 160,
@@ -1440,7 +1440,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A equipe tem duas opções de colheita viáveis que respeitam todas as restrições da fazenda:<br>Cenário A: Vender 40 caixas normais e 10 orgânicas (40, 10).<br>Cenário B: Vender 20 caixas normais e 20 orgânicas (20, 20).</p>
             <p>Qual é a <strong>diferença financeira</strong> em reais do lucro (Z) entregue pelo cenário mais lucrativo (B) em relação ao menos lucrativo (A)?</p>
         `,
-        placeholder: 'Ex: 50',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 10,
@@ -1455,7 +1455,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um restaurante oferece dois tipos de prato executivo: Frango (x) e Carne (y). Inicialmente, o lucro da opção de frango era de R$ 15,00 e o da carne era de R$ 20,00, modelando a função de lucro total como Z = 15x + 20y.</p>
             <p>Para atrair mais clientes durante uma semana de promoção, o restaurante decidiu oferecer um desconto de R$ 5,00 no preço final do prato de Frango (sem alterar os custos do prato). Se o restaurante vender 40 pratos de frango (x=40) e 25 de carne (y=25) após o desconto, qual será o lucro total (Z) obtido?</p>
         `,
-        placeholder: 'Ex: 1000',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 900,
@@ -1470,7 +1470,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma confecção deseja encontrar o plano de corte de tecidos que <strong>minimize</strong> a quantidade de sobras e retalhos não utilizáveis, que representam prejuízo. O molde para camisas P (x) deixa uma sobra de 30 cm² de tecido e o molde para camisas G (y) deixa 50 cm² de sobra.</p>
             <p>Aplicando o plano de corte sugerido de produzir 25 camisas P (x=25) e 15 camisas G (y=15), qual é o desperdício total em centímetros quadrados que a função objetivo (C) registrará e buscará minimizar nas próximas rodadas?</p>
         `,
-        placeholder: 'Ex: 1500',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'cm²',
         answer: 1500,
@@ -1485,7 +1485,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma locadora de veículos precisa maximizar seu faturamento diário (Z) alugando carros compactos (x) que rendem R$ 120,00 por dia e SUVs (y) que rendem R$ 280,00 por dia. O modelo de faturamento é Z = 120x + 280y.</p>
             <p>Se o caixa da locadora no final do dia marcou um faturamento exato de R$ 3.040,00 e o sistema acusou o aluguel de 8 SUVs (y=8), quantos carros compactos (x) foram alugados?</p>
         `,
-        placeholder: 'Ex: 10',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'carros',
         answer: 6,
@@ -1501,7 +1501,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma locadora de veículos precisa maximizar seu faturamento diário (Z) alugando carros compactos (x) que rendem R$ 120,00 por dia e SUVs (y) que rendem R$ 280,00 por dia. O modelo de faturamento é <strong>Z = 120x + 280y</strong>.</p>
             <p>Se o caixa da locadora no final do dia marcou um faturamento exato de R$ 2.960,00 e o sistema de telemetria acusou o aluguel de exatos 8 SUVs (y=8), quantos carros compactos (x) foram alugados nesse mesmo dia?</p>
         `,
-        placeholder: 'Ex: 5',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'carros',
         answer: 6,
@@ -1516,7 +1516,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Um fazendeiro precisa suplementar a dieta de seus animais. Ele vai comprar o Suplemento Alfa (x), vendido em sacos de 10 kg por R$ 120,00, e o Suplemento Beta (y), vendido em sacos de 20 kg por R$ 180,00.</p>
             <p>O fazendeiro quer programar seu software de gestão para encontrar o custo mínimo de alimentação trabalhando apenas com "quilos" em vez de "sacos". Qual será o valor em reais do coeficiente associado à Ração Beta (variável y, representando 1 quilo dessa ração) na função objetivo de custo (C)?</p>
         `,
-        placeholder: 'Ex: 10',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 9,
@@ -1531,7 +1531,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Uma montadora produz motos esportivas (x) e motos custom (y). O analista montou uma tabela informando que a esportiva exige 15 horas de montagem e dá lucro de R$ 4.000,00. Já a custom exige 25 horas e dá lucro de R$ 3.000,00. A equipe de montagem dispõe de no máximo 800 horas no mês.</p>
             <p>Ao redigir a função objetivo de maximização (Z), qual número (coeficiente exato) você colocará acompanhando a variável das motos custom (y) para representar o foco financeiro?</p>
         `,
-        placeholder: 'Ex: 25',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: '',
         answer: 3000,
@@ -1546,7 +1546,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O lucro base de uma oficina de restauro é ditado por Z = 800x + 1200y (onde x é um restauro simples e y um avançado). Um novo verniz de secagem rápida foi lançado no mercado. Aplicá-lo reduz o tempo de trabalho e aumenta a eficiência da mão de obra, adicionando um bônus líquido de R$ 150,00 no lucro de QUALQUER tipo de restauro feito.</p>
             <p>Se a oficina aderir 100% ao novo verniz, qual será o valor do novo coeficiente multiplicador da variável de restauro avançado (y) na nova Função Objetivo da oficina?</p>
         `,
-        placeholder: 'Ex: 1500',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 1350,
@@ -1730,7 +1730,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O Setor de Vendas informou que o lucro limpo por lote de baguetes é de R$ 50,00, e o de croissants é de R$ 80,00. A Função Objetivo é <strong>Z = 50x + 80y</strong>.</p>
             <p>Utilizando o Método Gráfico (ou resolvendo o sistema para encontrar o vértice de interseção), qual é o <strong>lucro máximo</strong> em reais que o Seu Carlos pode obter no dia?</p>
         `,
-        placeholder: 'Ex: 1000',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 2100,
@@ -1748,7 +1748,7 @@ const BANCO_QUESTOES_EMAC = {
             </ul>
             <p>A bússola do lucro aponta a Função Objetivo <strong>Z = 200x + 300y</strong>. Para que a fábrica atinja exatamente a ponta dessa bússola e garanta o maior faturamento possível, <strong>quantos Smartphones (x)</strong> devem ser produzidos?</p>
         `,
-        placeholder: 'Ex: 10',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'smartphones',
         answer: 16,
@@ -1767,7 +1767,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O custo por quilo da Ração A é R$ 10,00 e da Ração B é R$ 15,00. Nossa Função Objetivo de minimização é <strong>C = 10x + 15y</strong>.</p>
             <p>Analisando os vértices da zona de segurança formada pelas inequações, qual é o <strong>custo mínimo</strong> em reais para alimentar o rebanho garantindo os nutrientes?</p>
         `,
-        placeholder: 'Ex: 150',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 180,
@@ -1786,7 +1786,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A transportadora cobra R$ 150,00 pelo aluguel da Van e R$ 200,00 pelo Caminhão. A Função Objetivo é <strong>C = 150x + 200y</strong>.</p>
             <p>Para minimizar os custos da fábrica e ainda assim bater as duas metas, <strong>quantos Caminhões (y)</strong> Seu Osvaldo deve alugar?</p>
         `,
-        placeholder: 'Ex: 2',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'caminhões',
         answer: 3,
@@ -1805,7 +1805,7 @@ const BANCO_QUESTOES_EMAC = {
             </ul>
             <p>Desenhando esse polígono de sobrevivência mental e arrastando a Reta de Lucro (neste caso, Reta de Pontos), qual é a <strong>pontuação máxima (Z)</strong> que ele consegue atingir no simulado?</p>
         `,
-        placeholder: 'Ex: 50',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'pontos',
         answer: 56,
@@ -1824,7 +1824,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>As peças de luxo geram um faturamento excelente. A Função Objetivo é <strong>Z = 400x + 300y</strong>. Fazendo a varredura visual no gráfico, percebe-se que a flecha do dinheiro aponta fortemente para a interseção das duas regras.</p>
             <p>Para cravar a produção no ponto ótimo, <strong>quantas Estantes (x)</strong> o carpinteiro deve montar no final do mês?</p>
         `,
-        placeholder: 'Ex: 10',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'estantes',
         answer: 15,
@@ -1843,7 +1843,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O mercado de luxo compra as peças rapidamente, garantindo uma Função Objetivo de Lucro estipulada em <strong>Z = 80x + 150y</strong>.</p>
             <p>Se o ourives planejar a sua bancada seguindo rigorosamente a matemática do Ponto Ótimo, qual será o <strong>lucro máximo</strong> em reais que a joalheria alcançará com essas peças?</p>
         `,
-        placeholder: 'Ex: 1000',
+        placeholder: '',
         unitPrefix: 'R$',
         unitSuffix: '',
         answer: 1700,
@@ -1862,7 +1862,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>O sucesso do evento é medido pelo conforto. A Função Objetivo que calcula a <strong>Capacidade Máxima de Convidados (Z)</strong> é <strong>Z = 30x + 80y</strong>.</p>
             <p>Rodando a régua de varredura visual no gráfico, qual é o número máximo de convidados (Z) que podem ser abrigados no evento?</p>
         `,
-        placeholder: 'Ex: 500',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'convidados',
         answer: 680,
@@ -1881,7 +1881,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>Como ele tem aversão a perder dinheiro, a Função Objetivo é um placar de risco (que ele deseja minimizar): <strong>R = 3x + 4y</strong>.</p>
             <p>Qual é a quantia exata (em milhares, ou seja, o valor de <strong>x</strong>) que ele deve alocar no Fundo de Ações para sofrer o <strong>menor risco possível</strong>?</p>
         `,
-        placeholder: 'Ex: 4',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: '',
         answer: 6,
@@ -1900,7 +1900,7 @@ const BANCO_QUESTOES_EMAC = {
             <p>A Função Objetivo reflete o volume de entregas: <strong>Z = 10x + 20y</strong> pacotes por hora. O gestor quer despachar a maior quantidade de entregas possível.</p>
             <p>Ao alinhar a reta de varredura com o vértice ótimo da operação, qual será o <strong>número máximo de pacotes (Z)</strong> que a equipe conseguirá entregar na hora?</p>
         `,
-        placeholder: 'Ex: 150',
+        placeholder: '',
         unitPrefix: '',
         unitSuffix: 'pacotes',
         answer: 220,
